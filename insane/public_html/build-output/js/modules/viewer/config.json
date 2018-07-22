@@ -1,0 +1,14 @@
+{
+    "name" : "viewer",
+    "version" : "1.0.0",
+    "deps" : ["imaging","settings"],
+    "offlineCapable" : true,
+    "masterModule" : true,
+    "defaultModule" : true,
+    "icons" : {
+        
+    },
+    "exports" : [
+        "sampleControls" , "Authentication"
+    ]
+}

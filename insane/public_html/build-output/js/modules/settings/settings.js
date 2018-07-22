@@ -1,0 +1,1 @@
+define(["core"],function(e,t){return e.Module.extend({initialize:function(e){},routes:{settings:"home","settings/view":"showSettings"},home:function(e){alert(1)},showSettings:function(e){alert(2)}})});

@@ -1,0 +1,1 @@
+"use stricts";define(["core","template!{viewer}main.html"],function(e,t){return e.Module.extend({initialize:function(e){},routes:{viewer:"home","viewer/view/:image":"showImage"},home:function(e){this.$element.html(t)},showImage:function(e){alert(3)}})});

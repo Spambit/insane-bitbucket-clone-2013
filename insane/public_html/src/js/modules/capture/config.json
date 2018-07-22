@@ -1,0 +1,18 @@
+{
+    "name" : "capture",
+    "version" : "1.0.0",
+    "deps" : {
+        "imaging" : "1.0.0" ,
+        "settings" : "1.0.3",
+        "capturesource":"1.0.0"
+    },
+    "offlineCapable" : true,
+    "masterModule" : true,
+    "defaultModule" : true,
+    "icons" : {
+        
+    },
+    "exports" : [
+        "sampleControls" , "Authentication"
+    ]
+}

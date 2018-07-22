@@ -1,0 +1,8 @@
+({
+        "appDir" : "../src",
+        "baseUrl" : "js",
+        "dir" : "../build-output",
+        "mainConfigFile" : "../src/require-config.js",
+        "name" : "app",
+        "optimizeCss" : "standard"
+})

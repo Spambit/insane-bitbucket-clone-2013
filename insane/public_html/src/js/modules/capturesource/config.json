@@ -1,0 +1,8 @@
+{
+    "name" : "capturesource",
+    "version" : "1.0.0",
+    "deps" : {},
+    "desc" : "Handles with different sources like - camera, printer etc",
+    "offlineCapable" : true,
+    "masterModule" : false
+}

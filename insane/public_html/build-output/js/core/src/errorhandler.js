@@ -1,0 +1,1 @@
+define([],function(){return{TYPES:{require:0,unknown:1},handle:function(e){console.log(e)}}});

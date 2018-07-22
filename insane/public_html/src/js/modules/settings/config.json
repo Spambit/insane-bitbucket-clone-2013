@@ -1,0 +1,9 @@
+{
+    "name" : "settings",
+    "version" : "1.0.0",
+    "deps" : {},
+    "offlineCapable" : true,
+    "masterModule" : false,
+    "defaultModule" : false,
+    "exports" : []
+}

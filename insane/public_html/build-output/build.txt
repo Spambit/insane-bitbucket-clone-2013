@@ -1,0 +1,16 @@
+
+js/app.js
+----------------
+libs/jquery.js
+libs/underscore.js
+libs/backbone.js
+js/core/src/errorhandler.js
+js/core/src/device.js
+js/core/src/logger.js
+js/core/src/eventAggregator.js
+js/core/src/require-json.js
+js/core/src/require-template.js
+js/core/src/preloads.js
+js/core/src/core.js
+js/core/src/moduleLoader.js
+js/app.js

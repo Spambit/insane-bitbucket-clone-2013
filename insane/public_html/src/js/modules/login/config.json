@@ -1,0 +1,11 @@
+{
+    "name" : "login",
+    "version" : "1.0.0",
+    "deps" : {
+        "settings" : "1.0.1"
+    },
+    "offlineCapable" : true,
+    "masterModule" : false,
+    "defaultModule" : false,
+    "exports" : []
+}

@@ -1,0 +1,8 @@
+{
+    "name" : "imaging",
+    "version" : "1.0.0",
+    "deps" : ["settings"],
+    "desc" : "Image manipulation program",
+    "offlineCapable" : true,
+    "masterModule" : false
+}

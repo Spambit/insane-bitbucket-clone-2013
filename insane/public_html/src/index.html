@@ -1,0 +1,29 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="libs/require.js"></script>
+        <script type="text/javascript">
+            //data-main is async 
+            // better not use it while app is booting up.
+            require(['require-config'], function() {
+                require(['app'], function(App) {
+                    var app = new App();
+                    app.start();
+                });
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <div  class='nav-bar-area'></div>
+        <div class="container"></div>
+    </body>
+</html>

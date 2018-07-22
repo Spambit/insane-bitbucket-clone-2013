@@ -1,0 +1,1 @@
+define(["underscore","backbone"],function(e,t){function n(){}return n.prototype.load=function(){var e=this;require(["modules/settings/settings","modules/viewer/viewer"],function(t,n){var r=new t,i=new n;e.trigger("load",[i,r])})},e.extend(n.prototype,t.Events),n});

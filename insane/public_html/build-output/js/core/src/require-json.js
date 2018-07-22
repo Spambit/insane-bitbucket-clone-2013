@@ -1,0 +1,1 @@
+define("json",["text","core/errorhandler"],function(e,t){return{load:function(n,r,i,s){function o(e){var n;try{n=JSON.parse(e)}catch(r){throw{type:t.TYPES.require,origin:r}}i&&i(n)}o.error=function(e){i&&i.error&&i.error(e)},e.load(n,r,o,s)},write:e.write}});

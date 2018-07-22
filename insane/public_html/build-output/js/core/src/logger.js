@@ -1,0 +1,1 @@
+"use stricts";define("logger",[],function(){return{log:function(e){}}});

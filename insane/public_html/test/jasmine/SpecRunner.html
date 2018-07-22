@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Jasmine Spec Runner v2.0.0</title>
+
+        <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.0.0/jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="lib/jasmine-2.0.0/jasmine.css">
+        <script type="text/javascript" src="src/libs/require.js"></script>
+        <script type = 'text/javascript'>
+            require.config({
+                baseUrl: '',
+                paths: {
+                    'jasmine': 'lib/jasmine-2.0.0/jasmine',
+                    'jasmine-html': 'lib/jasmine-2.0.0/jasmine-html',
+                    'jasmine-boot': 'lib/jasmine-2.0.0/boot',
+                    /*except jasmine any other libs will be loaded from src/libs*/
+                    'underscore': 'src/libs/underscore-amd',
+                    'jquery': 'src/libs/jquery',
+                    'backbone': 'src/libs/backbone-amd',
+                    'text': 'src/libs/text'
+                },
+                shim: {
+                    jasmine: {
+                        exports: 'jasmine'
+                    },
+                    'jasmine-html': {
+                        deps: ['jasmine'],
+                        exports: 'jasmine'
+                    },
+                    'jasmine-boot': {
+                        deps: ['jasmine', 'jasmine-html'],
+                        exports: 'jasmine'
+                    },
+                    'jquery': {
+                        exports: '$'
+                    }
+                }
+            });
+
+            require([
+                'underscore',
+                'jquery',
+                'jasmine-boot'
+            ],
+                    function(
+                            _,
+                            $,
+                            jasmine
+                            ) {
+
+                        /*
+                         var jasmineEnv = jasmine.getEnv();
+                         jasmineEnv.updateInterval = 1000;
+                         
+                         var htmlReporter = new jasmine.HtmlReporter();
+                         
+                         jasmineEnv.addReporter(htmlReporter);
+                         
+                         jasmineEnv.specFilter = function(spec) {
+                         return htmlReporter.specFilter(spec);
+                         };
+                         */
+                        var specs = [];
+
+                        specs.push('spec/core/errorhandlerSpec');
+
+                        //require(['text!specs.json'], function(specs) {
+                            //specs = JSON.parse(specs);
+                            require(specs, function() {
+                                require.config({
+                                    baseUrl: 'src/js',
+                                    paths: {
+                                        'underscore': '../libs/underscore-amd',
+                                        'jquery': '..libs/jquery',
+                                        'backbone': '../libs/backbone-amd',
+                                        'text': '../libs/text'
+                                    },
+                                    shim: {
+                                        'jquery': {
+                                            exports: '$'
+                                        }
+                                    }
+                                });
+                                
+                                window.execJasmine();
+                            });
+                        //});
+                    });
+        </script>
+
+        <!--
+                <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine.js"></script>
+                <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine-html.js"></script>
+                <script type="text/javascript" src="lib/jasmine-2.0.0/boot.js"></script>
+        
+                 include source files here... 
+                <script type="text/javascript" src="src/Player.js"></script>
+                <script type="text/javascript" src="src/Song.js"></script>
+        
+                 include spec files here... 
+                <script type="text/javascript" src="spec/SpecHelper.js"></script>
+                <script type="text/javascript" src="spec/PlayerSpec.js"></script>
+        
+                <script type="text/javascript" src="libs/require.js"></script>-->
+    </head>
+
+    <body>
+    </body>
+</html>

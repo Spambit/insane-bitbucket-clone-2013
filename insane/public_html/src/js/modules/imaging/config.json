@@ -1,0 +1,10 @@
+{
+    "name" : "imaging",
+    "version" : "1.0.0",
+    "deps" : {
+        "settings" : "1.0.0"
+    },
+    "desc" : "Image viewer & manipulation program",
+    "offlineCapable" : true,
+    "masterModule" : false
+}

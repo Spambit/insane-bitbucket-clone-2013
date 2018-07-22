@@ -1,0 +1,8 @@
+{
+    "name" : "MrWhite",
+    "version" : "1.0.0",
+    "modules" : [
+        "viewer",
+        "capture"
+    ]
+}

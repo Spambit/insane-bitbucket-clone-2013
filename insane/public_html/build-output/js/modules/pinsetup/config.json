@@ -1,0 +1,7 @@
+{
+    "name" : "pinsetup",
+    "version" : "1.0.0",
+    "desc" : "4 digit pin setup module which shall reside in device. Offline module can have this module as dep.",
+    "offlineCapable" : true,
+    "masterModule" : false
+}

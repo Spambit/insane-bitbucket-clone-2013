@@ -1,0 +1,8 @@
+{
+    "name" : "insane",
+    "version" : "1.0.0",
+    "modules" : {
+        "viewer" : "1.0.0",
+        "capture" : "1.0.0"
+    }
+}

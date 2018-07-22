@@ -1,0 +1,8 @@
+{
+    "name" : "offline",
+    "version" : "1.0.0",
+    "deps" : ["pinsetup","login","settings"],
+    "desc" : "offline login and offline pin setup program",
+    "offlineCapable" : true,
+    "masterModule" : false
+}
